@@ -1,0 +1,43 @@
+<div class="tm-right-column">
+    
+                           
+
+    <div class="tm-content-div"  style="width:102%;margin-left: -22px;" >
+            <div style="width:160%; margin-top:-6px" class="uk-card uk-card-default uk-card-body uk-width-1-2@m card">
+
+
+                            <div *ngIf = "retour != {}" class="uk-button-group" style="display:block">
+
+                                <div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
+                                    <div>
+                                        <div class="uk-card uk-card-hover uk-card-body">
+                                            <h3 class="uk-card-title">Informations sur le candidat</h3>
+                                            <p  [innerHTML]="retour">
+
+                                                    {{ retour?.situation }}
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                                            <h4 class="uk-card-title">Photo de profil</h4>
+                                            
+                                            <p>
+
+                                                <img src="assets/img/user.svg">
+                                            </p>
+                                            
+                                            
+                                        </div>
+                                    </div>
+                        
+                            </div>
+
+                    
+                </div>   
+                
+       
+    </div>  
+
+    </div>

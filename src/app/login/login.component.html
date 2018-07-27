@@ -1,0 +1,50 @@
+
+                    <!-- Right column: content -->
+                    <div class="tm-right-column">
+                           
+
+                        <div class="tm-content-div">
+                                <div style="width:100%; margin-top:20px" class="uk-card uk-card-default uk-card-body uk-width-1-2@m card">
+                                    
+                                                              <!-- Contact Us section -->
+                            <section id="contact" class="tm-section connecter">
+                                <header><h2 class="tm-blue-text tm-section-title tm-margin-b-30 connection">Connexion</h2></header>
+
+                                <div class="row">
+                                    <div class="col-lg-6 connexion">
+                                        <form action="#contact" method="post" class="contact-form">
+                                       
+                                            <div class="form-group">
+                                                <input type="email" [(ngModel)]="user.email" id="contact_email" name="contact_email" class="form-control" placeholder="Email"  required/>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="password" [(ngModel)]="user.password" id="contact_password" name="password" class="form-control" placeholder="Mot de Passe"  required/>
+                                            </div>
+                                                                                   
+                                            <button type="submit" (click)="connexion()" class="float-right tm-button button">Se connecter</button>
+                                        
+                                            <div *ngIf="connect?.length > 0" class="uk-alert-primary" uk-alert>
+                                                <a class="uk-alert-close" uk-close></a>
+                                                <p>
+                                                 {{ notify }}
+                                                  
+                                                </p>
+                                                </div>
+                                        
+                                        
+                                        </form>   
+                                        
+                                     <a routerLink="/sign_up" style="margin-left:12px;margin-top:12px">   s'inscrire si vous n'etes pas encore enregistré </a>
+                                    </div>
+                                    
+                               
+                                </div>
+                                
+                            </section>
+                                      
+                                    </div>   
+                                    
+                           
+                        </div>  
+                        
+                    </div> 

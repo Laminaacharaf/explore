@@ -1,0 +1,70 @@
+ <!-- Right column: content -->
+ <div class="tm-right-column">
+                           
+
+  <div class="tm-content-div"  style="width:102%;margin-left: -22px;" >
+          <div style="width:160%; margin-top:-6px" class="uk-card uk-card-default uk-card-body uk-width-1-2@m card">
+
+
+                          <div class="uk-button-group" style="display:block">
+                            
+                            <!-- This is a button toggling the modal -->
+<button class="uk-button uk-button-primary btn" style="background-color:#296599" type="button" uk-toggle="target: #modal-example">Ajouter offre</button>
+<div class="uk-alert-primary" *ngIf="retour === true" uk-alert>
+    <a class="uk-alert-close" uk-close></a>
+    <p> {{notify}} </p>
+</div>
+
+<div class="uk-alert-warning" *ngIf = "retour === false" uk-alert>
+    <a class="uk-alert-close" uk-close></a>
+    <p>
+        {{errorNotify}}
+    </p>
+</div>
+
+<!-- This is the modal -->
+<div id="modal-example" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <h2 class="uk-modal-title">Ajouter offre</h2>
+
+        <form action="#contact" method="post" class="contact-form">
+                                       
+          <div class="form-group">
+              <input type="text" id="contact_email" [(ngModel)]="offre.metier" name="contact_email" class="form-control" placeholder="Metier"  required/>
+          </div>
+          <div class="form-group">
+              <input type="text" id="contact_password" [(ngModel)]="offre.titre" name="password" class="form-control" placeholder="titre"  required/>
+          </div>
+          <div class="form-group">
+            <input type="text" id="contact_email1" name="contact_email1" [(ngModel)]="offre.dateDebut" class="form-control" placeholder="Date de début Ex. 21/12/2017 "  required/>
+        </div>
+        <div class="form-group">
+            <input type="text" id="contact_password1" name="password1" [(ngModel)]="offre.dateFin" class="form-control" placeholder="Date de fin Ex. 21/12/2017"  required/>
+        </div>
+                                                 
+          <button type="submit" (click) = 'createOffre()' class="float-right tm-button button uk-modal-close">Enregistrer</button>
+     
+      
+      </form>   
+
+  
+    </div>
+</div>
+
+                              <button routerLink="/demandes" class="uk-button uk-button-primary btn" style="background-color:#296599">les Demandes</button>
+                           
+                              <button routerLink="/postulants" class="uk-button uk-button-primary btn" style="background-color:#296599">Les postulants</button>
+     
+                              
+                      
+                          </div>
+
+                  
+              </div>   
+              
+     
+  </div>  
+
+   
+  
+</div> <!-- Right column: content -->

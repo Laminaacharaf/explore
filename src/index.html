@@ -3,12 +3,88 @@
 <head>
   <meta charset="utf-8">
   <title>Explore</title>
+  
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <title>Neaty HTML Web Template</title>
+  <!--
+  Neaty HTML Template
+  http://www.templatemo.com/tm-501-neaty
+  -->
+      <!-- load stylesheets -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+      <link rel="stylesheet" href="assets/css/magnific-popup.css">                                <!-- Magnific pop up style, http://dimsemenov.com/plugins/magnific-popup/ -->
+      <link rel="stylesheet" href="assets/css/templatemo-style.css">  
+      <link rel="stylesheet" href="assets/css/style.css">                     
+      
+      <link href="node_modules/ng2-toastr/bundles/ng2-toastr.min.css" rel="stylesheet" />
+      <script src="node_modules/ng2-toastr/bundles/ng2-toastr.min.js"></script>
+      
+     
+      <!-- Templatemo style -->
+                                       <!-- Templatemo style -->
+  
+                                       <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/css/uikit.min.css" />
+  
+  <!-- UIkit JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit-icons.min.js"></script>
+  
+  
 </head>
 <body>
+
+
   <app-root></app-root>
+
+
+
+
+   <!-- load JS files -->
+   <script src="assets/js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) -->
+   <script src="assets/js/jquery.magnific-popup.min.js"></script>     <!-- Magnific pop-up (http://dimsemenov.com/plugins/magnific-popup/) -->
+   <script src="assets/js/jquery.singlePageNav.min.js"></script>      <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
+   <script>     
+  
+       $(document).ready(function(){
+
+           // Single page nav
+           $('.tm-main-nav').singlePageNav({
+               'currentClass' : "active",
+               offset : 20
+           });
+
+           // Magnific pop up
+           $('.tm-gallery-1').magnificPopup({
+             delegate: 'a', // child items selector, by clicking on it popup will open
+             type: 'image',
+             gallery: {enabled:true}
+             // other options
+           }); 
+
+           $('.tm-gallery-2').magnificPopup({
+             delegate: 'a', // child items selector, by clicking on it popup will open
+             type: 'image',
+             gallery: {enabled:true}
+             // other options
+           }); 
+
+           $('.tm-gallery-3').magnificPopup({
+             delegate: 'a', // child items selector, by clicking on it popup will open
+             type: 'image',
+             gallery: {enabled:true}
+             // other options
+           }); 
+
+           $('.tm-current-year').text(new Date().getFullYear());                
+       });
+   </script>   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>  
 </body>
 </html>

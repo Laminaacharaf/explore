@@ -1,0 +1,19 @@
+.uk-margin{
+    width: 37%
+}
+.droite{
+    float:right;
+}
+
+.uk-fieldset{
+    width: 65%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.spinner{
+    margin-top: 12px
+}
+.uk-select{
+    margin-top: 20px
+}
